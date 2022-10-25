@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <link rel="icon" type="image/png" href="~/Image/loginlogo.jpg" , 16px ,16px>
+    <link rel="stylesheet" href="~/Content/healthcare.css">
+    <script defer src="~/Scripts/Appointment.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <ul class="btn btn-info btnlogin" style="margin-left:1100px">
+            <li>@Html.ActionLink("LogOut", "Logout", "HomeHealthCare", new { area = "" }, null)</li>
+        </ul>
+    </div>
+
+    <div>
+        <aside id="leftmenu">
+            <img src="~/Image/Welcomeimg.png" width="290" height="400" alt="welcomeimage" />
+
+        </aside>
+        <main id="main">
+            <h3><span style="color: #FE1D42 ;"> Get</span>  HomeHealthCare</h3>
+            <h3>Services <span style="color: #FE1D42 ;">at your</span></h3>
+            <h3><span style="color: #FE1D42 ;">doorstep</span></h3>
+            <h6>Nursing Care | Elder Care | Attender</h6>
+            <h6>Covid Care | ICU setup at home</h6>
+            <form id="myForm">
+                <label for="txtdoctorname"><b>Doctor Name</b></label>
+                <select class="form-control" id="txtdoctorname" name="doctorname"></select>
+                <label for="txtspecialist"><b>Specialist</b></label>
+                <select class="form-control" id="txtspecialist" name="specialist"></select>
+                <label for="date">Date</label><br />
+                <input type="date" name="date" id="txtdate" autocomplete="off" style="width:100%">
+            </form>
+            <h3><button id="appointment" class="btn btn-info btnlogin">Book Appointment</button></h3>
+        </main>
+    </div>
+
+</body>
+</html>

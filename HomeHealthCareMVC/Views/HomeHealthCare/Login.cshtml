@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/Register.css" rel="stylesheet" />
+    <script defer src="~/Scripts/Login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="signin" class="form">
+            <h1>HomeHealthCare</h1>
+
+            <div class="form-field">
+                <label for="txtEmail">Email:</label>
+                <input type="text" name="email" id="txtEmail" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="txtPassword">Password:</label>
+                <input type="password" name="password" id="txtPassword" autocomplete="off">
+                <small></small>
+            </div>
+            <p></p>
+            <div class="form-field">
+                <input type="submit" id="txtlogin" class="btn btn-success btn-format" value="Login">
+            </div>
+            <p></p>
+            Do not have an Account?
+            @Html.ActionLink("Signup here", "Register", "HomeHealthCare", new { area = "" }, null)
+        </form>
+    </div>
+    <div id="validation-success"></div>
+
+</body>
+</html>
